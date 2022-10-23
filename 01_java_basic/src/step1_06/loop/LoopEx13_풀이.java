@@ -1,6 +1,5 @@
 package step1_06.loop;
 
-import java.util.Scanner;
 
 /*
  * # 소수찾기[1단계]
@@ -17,28 +16,11 @@ import java.util.Scanner;
  * 
  */
 
-public class LoopEx13_문제 {
+public class LoopEx13_풀이 {
 
 	public static void main(String[] args) {
 		
-		Scanner scan = new Scanner(System.in);
-		System.out.print("입력: ");
-		int prime = scan.nextInt();
-		
-		
-		for (int i = 2; i < prime; i++) {	//소수 
-			int cnt = 0;
-			
-			for (int j = 1; j <= i; j++) {
-				if (i % j == 0) {
-					cnt ++;
-				}
-			}
-			if (cnt == 2) {
-				System.out.print(i +" ");
-			}
-		}
-		scan.close();
+
 
 	}
 

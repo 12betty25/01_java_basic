@@ -25,21 +25,21 @@ public class LoopEx30_정답예시 {
 		int start = 1;
 		int end = 5;
 		
-		for (int i=0; i<5; i++) {
+		for (int i = 0; i < 5; i++) { //한줄에 5개의 숫자
 			
-			if (i % 2 == 0) {
-				for (int j = start; j <= end; j++) {
-					System.out.print(j + " ");
+			if (i % 2 == 0) {	//만약 짝수줄이면 	
+				for (int j = start; j <= end; j++) { //start~end 까지의 숫자를 
+					System.out.print(j + " ");       //출력
 				}
 			}
-			else {
-				for (int j = end; j >= start; j--) {
-					System.out.print(j + " ");
+			else {									 //홀수줄이면
+				for (int j = end; j >= start; j--) { //end~start까지 (반대로) 숫자
+					System.out.print(j + " ");		 //출력 
 				}
 			}
-			System.out.println();
+			System.out.println();					 //둘 중 한줄을 출력하고 나서 한줄 띄기 
 
-			start = end + 1;
+			start = end + 1;						 
 			end = end + 5;
 			
 		}
